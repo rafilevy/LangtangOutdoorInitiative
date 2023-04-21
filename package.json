@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "reload": "^3.2.1",
+    "tailwindcss": "^3.3.1"
+  },
+  "scripts": {
+    "serve": "npx reload -d src/ -w src/",
+    "tailwind:dev": "npx tailwindcss -i ./src/css/src/input.css -o ./src/css/build/output.css --watch",
+    "tailwind:build": "npx tailwindcss -i ./src/css/src/input.css -o ./src/css/build/output.css --minify",
+    "dev": "concurrently \"npm:tailwind:dev\" \"npm:serve\"",
+    "build": "npm run tailwind:build"
+  }
+}

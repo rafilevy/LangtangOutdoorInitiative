@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langtang Outdoor Initiative</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@300;400;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link href="css/build/output.css" type="text/css" rel="stylesheet" />
+    <script src="js/carousel.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/scrollFade.js"></script>
+</head>
+
+<body class="h-full cursor-custom font-source text-lg text-slate-800 absolute inset-0 m-0 overflow-auto scroll-smooth">
+    <nav id="main-nav" data-active="true" data-open-mobile="false" class="
+            group
+            z-20 fixed
+            w-full h-16 data-[active=false]:data-[open-mobile=false]:-translate-y-full
+            transition-transform ease-in-out duration-300 
+            bg-slate-800 text-white bg-opacity-80
+            font-semibold uppercase
+        ">
+        <div class="flex h-full items-center justify-between p-8">
+            <div class="text-4xl flex-1 font-archivo">LOI</div>
+            <ul class="
+                fixed
+                bg-slate-800 text-white bg-opacity-80
+                md:bg-transparent md:h-fit md:w-fit
+                md:flex-[3] md:[position:inherit] md:top-0
+                md:flex-row md:justify-end md:items-center md:gap-20 lg:gap-28
+                md:group-data-[open-mobile=false]:translate-x-0
+                md:pt-0 md:px-0
+                h-screen w-max top-16 left-0 pl-8 pr-12 pt-4
+                flex justify-start items-start flex-col gap-4
+                group-data-[open-mobile=false]:-translate-x-full
+                transition-transform ease-in-out duration-500 
+            ">
+                <li><a onclick="hideNav()" class="hover:text-brand transition-colors" href="#introduction">About</a>
+                </li>
+                <li><a onclick="hideNav()" class="hover:text-brand transition-colors" href="#activities">Activities</a>
+                </li>
+                <li><a onclick="hideNav()" class="hover:text-brand transition-colors" href="#founders">Founders</a></li>
+                <li><a onclick="hideNav()" class="hover:text-brand transition-colors" href="#contact">Contact</a></li>
+            </ul>
+            <div class="visible md:hidden flex justify-center items-center">
+                <button class="group-data-[open-mobile=true]:hidden material-symbols-outlined text-4xl"
+                    onclick="toggleMobileNav()">
+                    menu
+                </button>
+                <button class="group-data-[open-mobile=false]:hidden material-symbols-outlined text-4xl"
+                    onclick="toggleMobileNav()">
+                    close
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="w-full">
+        <section id="cover-page" class="w-full h-screen relative bg-gradient-to-t from-white to-transparent to-20%">
+            <div class="w-full h-full absolute -z-10">
+                <video autoplay muted loop class="w-full h-full object-cover object-center">
+                    <source src="res/cover_vid0.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div
+                class="absolute w-full h-full z-10 flex justify-center items-center flex-col pb-10 text-5xl sm:text-7xl font-bold">
+                <h1 data-visible="false"
+                    class="fade-in duration-[1500ms] ease-in-out font-archivo z-1 uppercase text-slate-900 [letter-spacing:6px] w-fit">
+                    <span class="text-brand">Langtang</span>
+                    <br>
+                    Outdoor
+                    <br>
+                    Initiative
+                    <hr class="mt-1 w-full border-0 bg-brand h-1">
+                </h1>
+            </div>
+        </section>
+        <div class="bg-[url('/res/mountains.jpg')] bg-cover bg-center">
+            <div
+                class="pb-12 bg-[linear-gradient(0deg,_rgba(255,255,255,1)_0%,_rgba(255,255,255,0.3)_50%,_rgba(255,255,255,1)_100%)]">
+                <section data-visible="false" id="introduction"
+                    class="fade-in duration-[2s] ease-in-out mt-12 pt-12 px-6 max-w-screen-lg mx-auto w-full space-y-2 text-justify text-xl">
+                    <p>
+                        <span class="text-xl font-bold text-brand">Lorem</span>
+                        ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, atque sequi debitis quisquam
+                        asperiores rem placeat, illum ipsum doloribus earum excepturi similique blanditiis quod
+                        consequatur
+                        molestiae iure possimus quam provident.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, excepturi labore cum voluptatem
+                        sit
+                        odio sint soluta dolorum quaerat nobis. Corrupti ea reprehenderit voluptate impedit totam enim
+                        nobis
+                        volutpates repellendus?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit repudiandae mollitia
+                        reprehenderit
+                        magnam dignissimos illum delectus beatae aliquid in accusamus? Vel omnis aspernatur ut similique
+                        quidem
+                        saepe natus obcaecati impedit?</p>
+                </section>
+                <section data-visible="false" id="activities"
+                    class="fade-in duration-[2s] ease-in-out mt-12 pt-12 px-6 max-w-screen-lg mx-auto">
+                    <h2 class="text-5xl font-bold mb-4 uppercase font-oswald w-fit">
+                        <span class="text-brand">Choose</span> your activity
+                        <hr class="border-0 w-full h-1 bg-brand mt-2">
+                    </h2>
+                    <div class="w-full h-[60vh] relative">
+                        <div id="act_carousel" class="shadow-lg">
+                            <div data-active="true"
+                                class="data-[active=false]:opacity-0 data-[active=false]:hidden opacity-100 ease-in-out duration-300 absolute transition-opacity w-full h-full rounded bg-[url('/res/trek.jpg')] bg-cover bg-center flex items-end">
+                                <div
+                                    class="px-4 pb-8 pt-16 w-full bg-gradient-to-t from-[rgba(255,255,255,0.7)] to-transparent">
+                                    <h3 class="text-3xl text-brand font-bold">Trekking</h3>
+                                    <hr class="border-0 bg-brand w-full h-0.5 mt-0.5">
+                                    <p class="mt-2 max-w-screen-md">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Asperiores
+                                        veritatis dicta quis neque praesentium aut autem ducimus temporibus. Adipisci,
+                                        fuga
+                                        obcaecati! Aspernatur, dolores eaque dolorem delectus quasi architecto
+                                        repellendus
+                                        ratione.</p>
+                                    <a href="#" class="text-sm hover:text-brand transition-colors">Learn more...</a>
+                                </div>
+                            </div>
+                            <div data-active="false"
+                                class="data-[active=false]:opacity-0 data-[active=false]:hidden opacity-100 ease-in-out duration-300 absolute transition-opacity w-full h-full rounded bg-[url('/res/boulder.png')] bg-cover bg-center flex items-end">
+                                <div
+                                    class="px-4 pb-8 pt-16 w-full bg-gradient-to-t from-[rgba(255,255,255,0.7)] to-transparent">
+                                    <h3 class="text-3xl text-brand font-bold">Bouldering</h3>
+                                    <hr class="border-0 bg-brand w-full h-0.5 mt-0.5">
+                                    <p class="mt-2 max-w-screen-md">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Asperiores
+                                        veritatis dicta quis neque praesentium aut autem ducimus temporibus. Adipisci,
+                                        fuga
+                                        obcaecati! Aspernatur, dolores eaque dolorem delectus quasi architecto
+                                        repellendus
+                                        ratione.</p>
+                                    <a href="#" class="text-sm hover:text-brand transition-colors">Learn more...</a>
+                                </div>
+                            </div>
+                            <div data-active="false"
+                                class="data-[active=false]:opacity-0 data-[active=false]:hidden opacity-100 ease-in-out duration-300 absolute transition-opacity w-full h-full rounded bg-[url('/res/peak.jpg')] bg-cover bg-center flex items-end">
+                                <div
+                                    class="px-4 pb-8 pt-16  w-full bg-gradient-to-t from-[rgba(255,255,255,0.7)] to-transparent">
+                                    <h3 class="text-3xl text-brand font-bold">Peak Climbing</h3>
+                                    <hr class="border-0 bg-brand w-full h-0.5 mt-0.5">
+                                    <p class="mt-2 max-w-screen-md">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Asperiores
+                                        veritatis dicta quis neque praesentium aut autem ducimus temporibus. Adipisci,
+                                        fuga
+                                        obcaecati! Aspernatur, dolores eaque dolorem delectus quasi architecto
+                                        repellendus
+                                        ratione.</p>
+                                    <a href="#" class="text-sm hover:text-brand transition-colors">Learn more...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-4xl">
+                            <button class="absolute left-3 bottom-0.5"
+                                onclick="carouselTransition('act_carousel', false)">&laquo</button>
+                            <button class="absolute right-3 bottom-0.5"
+                                onclick="carouselTransition('act_carousel')">&raquo</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <img src="res/pexels-riccardo-303040.jpg" class="w-full">
+        <section id="founders" class="w-full h-full pt-20 pb-12 px-12 bg-slate-200">
+            <div data-visible="false" class="fade-in duration-[2s]">
+                <h2 class="text-center text-6xl font-bold font-oswald uppercase">MEET THE FOUNDERS</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-12">
+                    <div class="flex flex-col sm:flex-row items-center gap-8 justify-center">
+                        <img src="res/pexels-trace-constant-2834009.jpg" class="rounded-full w-64" />
+                        <div>
+                            <h2 class="text-brand text-3xl font-bold">Thupten Lama</h2>
+                            <p class="mt-2 text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Molestias
+                                doloremque, esse,
+                                dignissimos, cumque repellat hic nobis ut vel quibusdam assumenda fugiat? Perferendis
+                                aperiam repellendus eum quidem pariatur officiis, quas itaque!</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-center gap-8 justify-center">
+                        <img src="res/pexels-trace-constant-2834009.jpg" class="rounded-full w-64" />
+                        <div>
+                            <h2 class="text-brand text-3xl font-bold">Rafi Levy</h2>
+                            <p class="mt-2 text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Molestias
+                                doloremque, esse,
+                                dignissimos, cumque repellat hic nobis ut vel quibusdam assumenda fugiat? Perferendis
+                                aperiam repellendus eum quidem pariatur officiis, quas itaque!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img src="res/mountain line art.svg" class="w-full object-cover object-center" />
+        <div class="pt-24 pb-12 px-8 w-full bg-slate-800">
+            <p data-visible="false"
+                class="fade-in scale-in duration-[2s] ease-in-out text-5xl text-white [letter-spacing:8px] drop-shadow-xl font-archivo text-center md:[letter-spacing:16px] md:text-6xl">
+                <span class="text-brand">ADVENTURE</span>
+                <span>AWAITS</span>
+            </p>
+        </div>
+        <section id="contact" class="w-full bg-slate-800 pb-48">
+            <div data-visible="false"
+                class="fade-in duration-[2s] ease-in-out max-w-screen-lg w-full mx-auto px-8 text-white flex flex-row flex-wrap justify-evenly items-center text-2xl gap-4">
+                <div class="flex flex-row items-center gap-3 w-max">
+                    <img src="res/email-svgrepo-com.svg" class="w-8" />
+                    <a href="mailto:langtangoutdoorinitiative@gmail.com">
+                        langtangoutdoorinitiative@gmail.com
+                    </a>
+                </div>
+                <div class="flex flex-row items-center gap-3 w-max">
+                    <img src="res/whatsapp-svgrepo-com.svg" class="w-8" />
+                    <a href="">
+                        +000000000000
+                    </a>
+                </div>
+                <div class="flex flex-row items-center gap-3 w-max">
+                    <img src="res/instagram-svgrepo-com.svg" class="w-8" />
+                    <a href="">
+                        @langtangoutdoorinitiative
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer class="w-full px-4 pb-4 font-mono text-sm bg-slate-800 text-white">
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" class="inline">
+            <span property="dct:title">Langtang Outdoor Initiative</span> by <a rel="cc:attributionURL dct:creator"
+                property="cc:attributionName" href="https://rafilevy.uk">Raphael Levy</a> is licensed under
+            <a class="inline-flex flex-row items-center gap-1"
+                href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer">
+                CC BY-NC-ND 4.0
+                <img class="h-4" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+                <img class="h-4" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
+                <img class="h-4" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1">
+                <img class="h-4" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1">
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
