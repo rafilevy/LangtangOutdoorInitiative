@@ -15,7 +15,7 @@ module.exports = {
         "archivo": ["Archivo Black", 'sans-serif'],
       },
       cursor: {
-        "custom": ["url('/res/cursor.svg')", "url('/res/cursor.png')", "auto"]
+        "custom": ["url('../../res/cursor.svg')", "url('../../res/cursor.png')", "auto"]
       }
     },
 
